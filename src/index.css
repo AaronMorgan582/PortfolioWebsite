@@ -29,16 +29,13 @@ html {
     scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar {
-    display: none;
-}
-
 body {
+    overflow: auto;
     font-family: 'Poppins', sans-serif;
     background: var(--color-bg);
     color: var(--color-white);
     line-height: 1.7;
-    background-image: url(../src/Assets/pexels-adrien-olichon-2387793.jpg);
+    background-image: url(../src/Assets/gradienta-OzfD79w8ptA-unsplash.jpg);
 }
 
 /* ============= General Styles ============== */

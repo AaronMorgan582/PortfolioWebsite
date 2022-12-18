@@ -1,6 +1,8 @@
 import React from 'react'
 import "./testimonials.css"
-import AVATAR from "../../Assets/P_20200529_133111_BF.jpg"
+import ULOGO from "../../Assets/U_Logo.png"
+import DLOGO from "../../Assets/Dominion_Logo.png"
+import ALOGO from "../../Assets/Amazon_Logo.jpg"
 
 import {Pagination} from 'swiper';
 
@@ -12,34 +14,34 @@ import 'swiper/css/pagination';
 
 const data = [
   {
-    avatar: AVATAR,
-    name: "This Guy",
-    review: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis mollitia facere deleniti nobis adipisci ipsum rem pariatur perferendis in exercitationem delectus sapiente illo sint dolorem, voluptate dolorum cupiditate aperiam deserunt!"
+    avatar: ULOGO,
+    name: "University of Utah Learning Assistant",
+    review: "Worked as a Learning Assistant for the University of Utah's Math Department, helping undergraduate students learn Calculus."
   },
   {
-    avatar: AVATAR,
-    name: "This Guy",
-    review: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis mollitia facere deleniti nobis adipisci ipsum rem pariatur perferendis in exercitationem delectus sapiente illo sint dolorem, voluptate dolorum cupiditate aperiam deserunt!"
+    avatar: ALOGO,
+    name: "Amazon/Your Neighborhood Deliveries",
+    review: "Worked as a Delivery Driver for Amazon via a local Delivery Service Partner."
   },
   {
-    avatar: AVATAR,
-    name: "This Guy",
-    review: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis mollitia facere deleniti nobis adipisci ipsum rem pariatur perferendis in exercitationem delectus sapiente illo sint dolorem, voluptate dolorum cupiditate aperiam deserunt!"
+    avatar: DLOGO,
+    name: "Dominion Energy/Questar Gas",
+    review: "Worked as a Meter Reader, working independently in the field reading and inspecting gas meters."
   },
   {
-    avatar: AVATAR,
-    name: "This Guy",
-    review: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis mollitia facere deleniti nobis adipisci ipsum rem pariatur perferendis in exercitationem delectus sapiente illo sint dolorem, voluptate dolorum cupiditate aperiam deserunt!"
+    avatar: ULOGO,
+    name: "University Neuropsychiatric Institute",
+    review: "Worked as a Psychiatric Technician providing patient care by collaborating with a team of health providers."
   },
 ]
 
 const Testimonials = () => {
   return (
-    <section id='testimonials'>
-      <h5>Reviews from clients</h5>
-      <h2>Testimonials</h2>
+    <section id='WorkExperience'>
+      <h5>Where I've Worked</h5>
+      <h2>Work Experience</h2>
 
-      <Swiper className="testimonials__container" 
+      <Swiper className="work__container" 
             modules={[Pagination]}
             spaceBetween={40}
             slidesPerView={1}
@@ -47,9 +49,9 @@ const Testimonials = () => {
         {
           data.map(({avatar, name, review}, index) => {
             return(
-              <SwiperSlide className='testimonial'>
+              <SwiperSlide className='work'>
               <div className="client__avatar">
-                <img src={AVATAR} alt="Avatar One" />
+                <img src={avatar} alt="Avatar One" />
               </div>
               <h5 className='client__name'>{name}</h5>
               <small className='client__review'> {review}</small>

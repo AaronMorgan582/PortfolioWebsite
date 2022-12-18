@@ -2,7 +2,6 @@ import React from 'react'
 import "./contact.css"
 import {HiOutlineMail} from 'react-icons/hi'
 import {BiMessageDetail} from 'react-icons/bi'
-import {SiMessenger} from 'react-icons/si'
 import {useRef} from 'react'
 import emailjs from 'emailjs-com'
 
@@ -17,7 +16,7 @@ const Contacts = () => {
   };
 
   return (
-    <section id='contact'>
+    <section id='Contact'>
       <h5>Get In Touch</h5>
       <h2>Contact Me</h2>
 
@@ -26,23 +25,15 @@ const Contacts = () => {
           <article className='contact__option'>
             <HiOutlineMail className='contact__option-icon'/>
             <h4>Email</h4>
-            <h5>dummyemail@gmail.com</h5>
-            <a href='mailto:dummyemail@gmail.com' target='_blank'>Send a message</a>
+            <a href='mailto:aaron.st.morgan@gmail.com' target='_blank' rel='noreferrer'>Send an email</a>
           </article>
 
           <article className='contact__option'>
             <BiMessageDetail className='contact__option-icon' />
-            <h4>Messenger</h4>
-            <h5>Example</h5>
-            <a href='mailto:dummyemail@gmail.com' target='_blank'>Send a message</a>
+            <h4>LinkedIn Message</h4>
+            <a href='https://www.linkedin.com/in/aaron-morgan-7045a819a/' target='_blank' rel='noreferrer'>Send a message</a>
           </article>
 
-          <article className='contact__option'>
-            <SiMessenger className='contact__option-icon'/>
-            <h4>Messenger2</h4>
-            <h5>Example2</h5>
-            <a href='mailto:dummyemail@gmail.com' target='_blank'>Send a message</a>
-          </article>
         </div>
 
         <form ref={form} onSubmit={sendEmail}>

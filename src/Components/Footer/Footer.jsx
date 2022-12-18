@@ -1,34 +1,37 @@
 import React from 'react'
 import "./footer.css"
-import {GrFacebook} from 'react-icons/gr'
-import {FiInstagram} from 'react-icons/fi'
-import {BsTwitter} from 'react-icons/bs'
+import {BsLinkedin} from 'react-icons/bs'
+import {BsGithub} from 'react-icons/bs'
 
 const Footer = () => {
   return (
     <footer>
-      <a href='#' className='footer__logo'>Aaron</a>
-
       <ul className='permalinks'>
         <li><a href='#'>Home</a></li>
-        <li><a href='#about'>About</a></li>
-        <li><a href='#experience'>Experience</a></li>
-        <li><a href='#services'>Services</a></li>
-        <li><a href='#portfolio'>Portfolio</a></li>
-        <li><a href='#testimonials'>Testimonials</a></li>
-        <li><a href='#contact'>Contact</a></li>
+        <li><a href='#About'>About</a></li>
+        <li><a href='#Experience'>Experience</a></li>
+        <li><a href='#GamePortfolio'>Games Portfolio</a></li>
+        <li><a href='#CodePortfolio'>Programming Portfolio</a></li>
+        <li><a href='#WritingPortfolio'>Writing Portfolio</a></li>
+        <li><a href='#WorkExperience'>Work Experience</a></li>
+        <li><a href='#Contact'>Contact</a></li>
       </ul>
 
       <div className='footer__socials'>
-        <a href='https://facebook.com'><GrFacebook /></a>
-        <a href='https://instagram.com'><FiInstagram /></a>
-        <a href='https://twitter.com'><BsTwitter /></a>
+        <a href='https://www.linkedin.com/in/aaron-morgan-7045a819a' target="_blank" rel='noreferrer'><BsLinkedin size={20}/></a>
+        <a href='https://github.com/AaronMorgan582' target="_blank" rel='noreferrer'><BsGithub size={20}/></a>
       </div>
 
       <div className='footer__copyright'>
         <small>
           &copy; Aaron Morgan. All rights reserved.
         </small>
+        <div className='credit__link'>
+        <a href='https://unsplash.com/photos/OzfD79w8ptA?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink'>Background provided by Unsplash.com</a>
+        </div>
+        <div className='credit__link'>
+        <a href='https://www.youtube.com/watch?v=G-Cr00UYokU'>This website created with assistance from EGATOR</a>
+        </div>
       </div>
     </footer>
   )
